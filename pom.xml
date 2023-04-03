@@ -27,8 +27,19 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.7.1</version>
 				<extensions>true</extensions>
+				<configuration>
+        <cloudHubDeployment>
+            <uri>https://anypoint.mulesoft.com</uri>
+            <muleVersion>4.4.0</muleVersion>
+            <username>emily_demo</username>
+            <password>Veronica@11591</password>
+            <applicationName>mulecicdpoc</applicationName>
+            <environment>Sandbox</environment>
+           
+        </cloudHubDeployment>
+    </configuration>
 			</plugin>
 		</plugins>
 	</build>
